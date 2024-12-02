@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- å∫ -->
+    <img
+      id="img-1"
+      src="http://placedog.net/300"
+      alt=""
+      onclick="agregarBordes('img-1', 'brown')"
+    />
+    <img
+      id="img-2"
+      src="http://placedog.net/300"
+      alt=""
+      onclick="agregarBordes('img-2', 'red')"
+    />
+    <img
+      id="img-3"
+      src="http://placedog.net/300"
+      alt=""
+      onclick="agregarBordes('img-3', 'green')"
+    />
+    <script>
+      /* Creamos la función */
+      function agregarBordes(elementId, color) {
+        elemento = document.querySelector("#" + elementId);
+        elemento.style.border = "dashed 3px " + color;
+      }
+    </script>
+  </body>
+</html>
